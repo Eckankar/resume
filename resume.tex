@@ -1,0 +1,163 @@
+% Sebastian Paaske Tørholm's Resume
+% Created: 7 Nov 2009
+% Last Modified: 7 Nov 2009
+
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Sebastian Paaske Tørholm}
+\newcommand{\addr}{Vinhaven 51, 1.mf, 2500 Valby}
+\newcommand{\phone}{+45 22 85 56 23}
+\newcommand{\email}{eckankar@gmail.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+	\begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Uddannelse}
+
+	\begin{ressubsec}{Københavns Universitet}{Bachelor}{Matematik med datalogi som bifag}
+		\ressubitem{Igangværende, startet 2006.}
+		\ressubitem{Gennemsnit indtil videre: 10,6.}
+	\end{ressubsec}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Arbejde}
+
+	\begin{ressubsec}{Instruktor i kurset "Introduktion til Programmering"}{Københavns Universitet}{September 2009 -- November 2009}
+		\ressubitem{Undervisning i funktionel programmering i Standard ML.}
+		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
+		\ressubitem{Udarbejdning af vejledende løsninger.}
+	\end{ressubsec}
+
+	\begin{ressubsec}{Instruktor i kurset "Objektorienteret Programmering og Design"}{Københavns Universitet}{November 2009 -- Januar 2010}
+		\ressubitem{Undervisning i objektorienteret programmering og design i Java.}
+		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
+		\ressubitem{Udarbejdning af obligatoriske opgaver og vejledende løsninger.}
+	\end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Tekniske kompetencer}
+	\begin{reslist}{Programmeringssprog}
+		\resitem{C\#, Java, Perl, PHP, Mathematica, Standard ML}
+	\end{reslist}
+	
+	\begin{reslist}{Diverse sprog/formater}
+		\resitem{CSS, HTML/XML, \LaTeX, SQL, YAML}
+	\end{reslist}
+	
+	\begin{reslist}{Værktøjer}
+		\resitem{Eclipse, VIM, Visual Studio}
+		\resitem{Lidt erfaring med source control, mest SVN, git og darcs.}
+	\end{reslist}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Yderligere aktiviteter}
+
+	\resitem{Vinder af Georg Mohr konkurrencen i matematik 2005 \& 2006.}
+	
+	\resitem{Deltager på det danske hold i Baltic Way konkurrencen i matematik 2005.}
+	
+	\resitem{Deltager for Danmark i the International Mathematical Olympiad 2006.}
+
+\end{ressection}
+
+
+\end{document}
