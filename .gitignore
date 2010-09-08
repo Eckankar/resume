@@ -1,0 +1,5 @@
+# Ignore output files.
+*.aux
+*.bbl
+*.blg
+*.log
