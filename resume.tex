@@ -1,6 +1,6 @@
 % Sebastian Paaske Tørholm's Resume
 % Created: 7 Nov 2009
-% Last Modified: 29 Jan 2010
+% Last Modified: 05 Dec 2011
 
 \documentclass[11pt,oneside,a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -76,7 +76,7 @@
 % This is a simple sublist
 \newenvironment{reslist}[1]{
 	\resitem{\textbf{#1}}
-	\vspace{-5pt}
+	\vspace{-2pt}
 	\begin{itemize}
 }{
 	\end{itemize}
@@ -108,7 +108,7 @@
 
 	\begin{ressubsec}{Københavns Universitet}{Bachelor}{Datalogi med matematik som bifag}
 		\ressubitem{Igangværende, startet 2006.}
-		\ressubitem{Gennemsnit indtil videre: 10,11.}
+		\ressubitem{Gennemsnit indtil videre: 10,11.} % XXX: Outdated, probably.
 	\end{ressubsec}
 
 \end{ressection}
@@ -116,24 +116,48 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Arbejde}
-	\begin{ressubsec}{Instruktor i kurset ``Introduktion til Programmering''}{Københavns Universitet}{September 2009 -- November 2009}
-		\ressubitem{Undervisning i funktionel programmering i Standard ML.}
-		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
-		\ressubitem{Udarbejdning af vejledende løsninger.}
+	\begin{ressubsec}{Studentermedhjælper}{Jobindex}{Februar 2012 -- }
+		\ressubitem{Udvikling på siden såvel som interne systemer, hovedsageligt i Perl.}
 	\end{ressubsec}
 
-	\begin{ressubsec}{Instruktor i kurset ``Objektorienteret Programmering og Design''}{Københavns Universitet}{November 2009 -- Januar 2010}
-		\ressubitem{Undervisning i objektorienteret programmering og design i Java.}
-		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
-		\ressubitem{Udarbejdning af obligatoriske opgaver og vejledende løsninger.}
-	\end{ressubsec}
-	
-    \begin{ressubsec}{Instruktor i kurset ``Algoritmer og Datastrukturer''}{Københavns Universitet}{April 2011 -- Juni 2011}
-		\ressubitem{Undervisning i grundlæggende algoritmer og datastrukturer.}
-		\ressubitem{Retning af obligatoriske opgaver.}
-		\ressubitem{Afholdelse af prøveeksaminer.}
-	\end{ressubsec}
+    \begin{ressubsec}{Instruktor}{Københavns Universitet}{November 2009 -- Juni 2012}
+        \begin{reslist}{``Algoritmer og Datastrukturer''}
+            \ressubitem{2 ansættelser: April 2012 -- Juni 2012, April 2011 -- Juni 2011}
+            \ressubitem{Kursus i essentielle algoritmer og datastrukturer.}
+        \end{reslist}
+        \begin{reslist}{``Introduktion til Programmering''}
+            \ressubitem{2 ansættelser: September 2011 -- November 2011, September 2009 -- November 2009}
+            \ressubitem{Introduktionskursus i funktionel programmering i Standard ML.}
+        \end{reslist}
+        \begin{reslist}{``Objektorienteret Programmering og Design''}
+            \ressubitem{November 2009 -- Januar 2010}
+            \ressubitem{Introduktionskursus i grundlæggende objektorienteret programmering og design med udgangspunkt i Java.}
+        \end{reslist}
+    \end{ressubsec}
 
+%	\begin{ressubsec}{Instruktor i kurset ``Introduktion til Programmering''}{Københavns Universitet}{September 2011 -- November 2011}
+%		\ressubitem{Undervisning i funktionel programmering i Standard ML.}
+%		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
+%		\ressubitem{Udarbejdning af vejledende løsninger.}
+%	\end{ressubsec}
+%
+%    \begin{ressubsec}{Instruktor i kurset ``Algoritmer og Datastrukturer''}{Københavns Universitet}{April 2011 -- Juni 2011}
+%		\ressubitem{Undervisning i grundlæggende algoritmer og datastrukturer.}
+%		\ressubitem{Retning af obligatoriske opgaver.}
+%		\ressubitem{Afholdelse af prøveeksaminer.}
+%	\end{ressubsec}
+%
+%	\begin{ressubsec}{Instruktor i kurset ``Objektorienteret Programmering og Design''}{Københavns Universitet}{November 2009 -- Januar 2010}
+%		\ressubitem{Undervisning i objektorienteret programmering og design i Java.}
+%		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
+%		\ressubitem{Udarbejdning af obligatoriske opgaver og vejledende løsninger.}
+%	\end{ressubsec}	
+%
+%	\begin{ressubsec}{Instruktor i kurset ``Introduktion til Programmering''}{Københavns Universitet}{September 2009 -- November 2009}
+%		\ressubitem{Undervisning i funktionel programmering i Standard ML.}
+%		\ressubitem{Retning af obligatoriske opgaver og eksamensopgaver.}
+%		\ressubitem{Udarbejdning af vejledende løsninger.}
+%	\end{ressubsec}
 
 \end{ressection}
 
@@ -141,14 +165,14 @@
 
 \begin{ressection}{Tekniske kompetencer}
 	\begin{reslist}{Programmeringssprog}
-		\resitem{C\#, Python, Java, PHP, Mathematica, Standard ML, C, MIPS Assembler}
+		\resitem{C\#, Python, Java, Standard ML, Perl, PHP, Mathematica, C, MIPS Assembler}
 	\end{reslist}
 	
 	\begin{reslist}{Diverse sprog/formater}
 		\resitem{CSS, HTML/XML, \LaTeX, SQL, YAML}
 	\end{reslist}
-	
-	\begin{reslist}{Værktøjer}
+
+    \begin{reslist}{Værktøjer}
 		\resitem{Eclipse, VIM, Visual Studio}
 		\resitem{Lidt erfaring med source control; mest git og darcs, lidt SVN.}
 	\end{reslist}
@@ -164,9 +188,9 @@
 	
 	\resitem{Deltager for Danmark i the International Mathematical Olympiad 2006.}
 
-    \resitem{Vinder af DM i Programmering 2010.}
+    \resitem{Vinder af DM i Programmering 2010 og 2011.}
 
-    \resitem{9. plads og 2. højest rangerende nordiske hold i North Western European Regional Contest,
+    \resitem{9. plads (2010) hhv. 7. plads (2011) i North Western European Regional Contest,
              kvalifikationsrunden til ACMs International Collegiate Programming Contest.}
 
 \end{ressection}
