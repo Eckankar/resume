@@ -28,29 +28,29 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-	\begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+    \begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{4pt}
-	{\fontfamily{phv}\selectfont\Large#1}
-	\begin{itemize}
-	\vspace{3pt}
+    \vspace{4pt}
+    {\fontfamily{phv}\selectfont\Large#1}
+    \begin{itemize}
+    \vspace{3pt}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
 \newcommand{\resitem}[1]{
-	\vspace{-4pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+    \vspace{-4pt}
+    \item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-	\vspace{-1pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+    \vspace{-1pt}
+    \item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A resbigitem is a complex list element for stuff like jobs and education:
@@ -58,28 +58,28 @@
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
 \newcommand{\resbigitem}[3]{
-	\vspace{-5pt}
-	\item
-	\textbf{#1}---#2 \\
-	\textit{#3}
+    \vspace{-5pt}
+    \item
+    \textbf{#1}---#2 \\
+    \textit{#3}
 }
 
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
-	\resbigitem{#1}{#2}{#3}
-	\vspace{-2pt}
-	\begin{itemize}
+    \resbigitem{#1}{#2}{#3}
+    \vspace{-2pt}
+    \begin{itemize}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 % This is a simple sublist
 \newenvironment{reslist}[1]{
-	\resitem{\textbf{#1}}
-	\vspace{-2pt}
-	\begin{itemize}
+    \resitem{\textbf{#1}}
+    \vspace{-2pt}
+    \begin{itemize}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 
@@ -105,23 +105,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Uddannelse}
-	\begin{ressubsec}{Københavns Universitet}{Kandidat}{Datalogi}
-		\ressubitem{Igangværende, startet 2012.}
-	\end{ressubsec}
+    \begin{ressubsec}{Københavns Universitet}{Kandidat}{Datalogi}
+        \ressubitem{Igangværende, startet 2012.}
+    \end{ressubsec}
 
-	\begin{ressubsec}{Københavns Universitet}{Bachelor}{Datalogi med matematik som bifag}
-		\ressubitem{2006 -- 2012}
-		\ressubitem{Gennemsnit: 10,18.}
-	\end{ressubsec}
+    \begin{ressubsec}{Københavns Universitet}{Bachelor}{Datalogi med matematik som bifag}
+        \ressubitem{2006 -- 2012}
+        \ressubitem{Gennemsnit: 10,18.}
+    \end{ressubsec}
 
 \end{ressection}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Arbejde}
-	\begin{ressubsec}{Studentermedhjælper}{Jobindex}{Februar 2012 -- }
-		\ressubitem{Udvikling på siden såvel som interne systemer, hovedsageligt i Perl.}
-	\end{ressubsec}
+    \begin{ressubsec}{Studentermedhjælper}{Jobindex}{Februar 2012 -- }
+        \ressubitem{Udvikling på siden såvel som interne systemer, hovedsageligt i Perl.}
+    \end{ressubsec}
 
     \begin{ressubsec}{Instruktor}{Københavns Universitet}{September 2009 -- November 2013}
         \begin{reslist}{``Introduktion til Programmering''}
@@ -143,28 +143,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{ressection}{Tekniske kompetencer}
-	\begin{reslist}{Programmeringssprog}
-		\resitem{C\#, Python, Perl, Standard ML, Java, PHP, Mathematica, C, MIPS Assembler}
-	\end{reslist}
-	
-	\begin{reslist}{Diverse sprog/formater}
-		\resitem{CSS, HTML/XML, \LaTeX, SQL, YAML}
-	\end{reslist}
+    \begin{reslist}{Programmeringssprog}
+        \resitem{C\#, Python, Perl, Standard ML, Java, PHP, Mathematica, C, MIPS Assembler}
+    \end{reslist}
+
+    \begin{reslist}{Diverse sprog/formater}
+        \resitem{CSS, HTML/XML, \LaTeX, SQL, YAML}
+    \end{reslist}
 
     \begin{reslist}{Værktøjer}
-		\resitem{vim, git, linux, Visual Studio, Eclipse}
-	\end{reslist}
+        \resitem{vim, git, linux, Visual Studio, Eclipse}
+    \end{reslist}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{ressection}{Yderligere aktiviteter}
 
-	\resitem{Vinder af Georg Mohr konkurrencen i matematik 2005 \& 2006.}
-	
-	\resitem{Deltager på det danske hold i Baltic Way konkurrencen i matematik 2005.}
-	
-	\resitem{Deltager for Danmark i the International Mathematical Olympiad 2006.}
+    \resitem{Vinder af Georg Mohr konkurrencen i matematik 2005 \& 2006.}
+
+    \resitem{Deltager på det danske hold i Baltic Way konkurrencen i matematik 2005.}
+
+    \resitem{Deltager for Danmark i the International Mathematical Olympiad 2006.}
 
     \resitem{Vinder af DM i Programmering 2010 og 2011.}
 
